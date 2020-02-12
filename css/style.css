@@ -2,7 +2,7 @@ body{
     /*font-family: 'PT Sans', sans-serif;
     font-family: 'Montserrat', sans-serif;*/
     text-align: center;
-    width: 942px;
+    width: 940px;
     margin: 0 auto;
 }
 
@@ -18,23 +18,19 @@ body{
             text-transform: uppercase;
         }
 
-header{
-    margin: 143px 0 108px 0;
-}
-
 header p{
     font-weight: bold;
     color: #898f99;
     font-size: 12px;
     letter-spacing: 5px;
-    margin-bottom: 36px;
+    margin: 10px 0 20px 0;
 }
 
 h1{
     color: #0ec8cb;
     font-size: 48px;
-    letter-spacing: 9px;
-    margin-bottom: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
     font-weight: 900;
 }
 
@@ -43,25 +39,55 @@ article{
     width: 520px;
     margin: 0 auto;
     font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 95px;
+}
+
+main{
+    width: 940px;
+    height: 420px;
+    border-collapse: collapse;
 }
 
 section{
     width: 235px;
-    height: 420px;
-    display: inline-block;
+    height: 410px;
     background: #f7f7f7;
+    display: table-cell;
+    padding: 50px 15px 0 15px;
+    border: 2px #ececec solid;
+    box-sizing:border-box;
 }
 
 h2{
     font-size: 21px;
     color: #1b1b1b;
+    padding-top: 55px;
+    padding-bottom: 25px;
 }
 
 section p{
     font-size: 14px;
     color: #777777;
+    line-height: 22px;
 }
 
-svg{
-    fill: #1b1b1b;
+.custom-h2{
+    margin-top: -10px;
+}
+
+.custom-p{
+    margin-top: -15px;
+}
+
+section:hover {
+    background-color: #0ec8cb;
+    border: 2px #84dbdc solid;
+    box-sizing:border-box;
+    
+}
+
+section:hover p, section:hover h2, section:hover svg{
+    color: #fff;
+    fill: #fff;
 }
